@@ -17,6 +17,125 @@ const sessionIds = new Map();
 
 function processEvent(event) {
     var sender = event.sender.id;
+	
+	
+	var messageData1 = {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [{
+          "title": "1. Apple parcel",
+          "subtitle": "Parcel in Thessaloniki area",
+          "image_url": "http://ssi.gov.gr/data/storage/attachments/0aab22e8afd66ca25abaea256ac8b1ea.png",
+          "buttons": [{
+            "type": "web_url",
+            "url": "http://ssi.gov.gr/samplecode.php",
+            "title": "web"
+          }, {
+            "type": "postback",
+            "title": "Ναι",
+            "payload": "Εδαφολογική ανάλυση",
+          }],
+        },{
+          "title": "2. Potato parcel",
+          "subtitle": "Parcel in Seres area",
+          "image_url": "http://ssi.gov.gr/attachments/Image/Environmental_picture_2.png",
+          "buttons": [{
+            "type": "web_url",
+            "url": "https://www.messenger.com/",
+            "title": "web"
+          }, {
+            "type": "postback",
+            "title": "Ναι",
+            "payload": "Καλλιέργεια",
+          }],
+        }		
+		,{
+          "title": "3. Tomato parcel",
+          "subtitle": "Parcel in Thessaloniki area",
+          "image_url": "http://ssi.gov.gr/attachments/Image/ieth_map.png",
+          "buttons": [{
+            "type": "web_url",
+            "url": "http://ssi.gov.gr/contactus.php",
+            "title": "web"
+          },{
+            "type": "postback",
+            "title": "Ναι",
+            "payload": "Διεύθυνση",
+          } ],
+        }
+		]
+      }
+    }
+  }
+	
+	
+	
+	if (event.postback) {	
+				var text1 = JSON.stringify(event.postback.payload);
+					
+				if (!sessionIds.has(sender)) {
+					sessionIds.set(sender, uuid.v1());
+				}
+				let apiaiRequest = apiAiService.textRequest(text1,
+					{
+						sessionId: sessionIds.get(sender)
+				});
+					
+			apiaiRequest.on('response', (response) => {		
+				   if (isDefined(response.result)) {						
+						let responseText = response.result.fulfillment.speech;
+						let responseData = response.result.fulfillment.data;
+						let action = response.result.action;						
+						//console.log( 'postback   responseText====', responseText);
+						//console.log( '66    action====', action);
+						
+						// if (action=='addressyes' )					
+						// {		
+						// var repl123='http://195.251.59.51/json/photos/adress.jpg';						
+						// var messageData123 ={
+											// "attachment":{
+											  // "type":"image",
+											  // "payload":{
+												// "url":""+repl123+""
+											  // }
+											// }
+										  // };
+						// sendFBMessage(sender, messageData123);
+						// setTimeout(function(){
+						// var wrwr='Θέλετε και να μας βρείτε;';			
+						// sendFBMessage(sender, {text: wrwr});
+						// }, 2000);
+						
+						// };	
+					
+						
+						 //sendFBMessage(sender, messageData1);
+						// console.log( 'ok');
+					// if(text1 != null && !text1.isEmpty())
+					// {				
+						// console.log('6666666666666666666666666666666 mesa        text1===', text1);
+					// }						
+						if (isDefined(responseData) && isDefined(responseData.facebook)) {
+							try {
+								console.log('Response as formatted message');
+								sendFBMessage(sender, responseData.facebook);
+							} catch (err) {
+								sendFBMessage(sender, {text: err.message });
+							}
+						} else if (isDefined(responseText)) {	
+						// console.log('6666666666666666666666666666666 mesa        responseText===', responseText);
+							sendFBMessage(sender, {text:responseText});			
+						}
+					}
+			});
+			apiaiRequest.on('error', (error) => console.error(error));
+			apiaiRequest.end();
+	};
+	
+	
+	
 
     if (event.message && event.message.text) {
         var text = event.message.text;
