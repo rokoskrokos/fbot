@@ -27,7 +27,7 @@ function processEvent(event) {
         "elements": [{
           "title": "1. Apple parcel",
           "subtitle": "Parcel in Thessaloniki area",
-          "image_url": "http://ssi.gov.gr/data/storage/attachments/0aab22e8afd66ca25abaea256ac8b1ea.png",
+          "image_url": "http://www.agronews.gr/files/temp/605E6F4B28B0612541320C6C50EA2686.jpg",
           "buttons": [{
             "type": "web_url",
             "url": "http://ssi.gov.gr/samplecode.php",
@@ -44,7 +44,7 @@ function processEvent(event) {
         },{
           "title": "2. Potato parcel",
           "subtitle": "Parcel in Seres area",
-          "image_url": "http://ssi.gov.gr/attachments/Image/Environmental_picture_2.png",
+          "image_url": "http://sspga.ca/wordpress_sspga/wp-content/uploads/2015/01/IMG_0239-website-size.jpg",
           "buttons": [{
             "type": "web_url",
             "url": "https://www.messenger.com/",
@@ -62,7 +62,7 @@ function processEvent(event) {
 		,{
           "title": "3. Tomato parcel",
           "subtitle": "Parcel in Thessaloniki area",
-          "image_url": "http://ssi.gov.gr/attachments/Image/ieth_map.png",
+          "image_url": "http://laxanokipos.com/LaxNew/wp-content/uploads/2015/03/2010_12_13_13-59-%CE%A4%CE%BF%CE%BC%CE%AC%CF%84%CE%B5%CF%82-%CF%85%CF%80%CE%B1%CE%AF%CE%B8%CF%81%CE%B9%CE%B5%CF%82-%CE%BC%CE%B5-mulch.jpg",
           "buttons": [{
             "type": "web_url",
             "url": "http://ssi.gov.gr/contactus.php",
