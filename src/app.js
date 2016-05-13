@@ -31,15 +31,15 @@ function processEvent(event) {
           "buttons": [{
             "type": "web_url",
             "url": "http://ssi.gov.gr/samplecode.php",
-            "title": "web"
+            "title": "Web"
           },{
             "type": "postback",
             "title": "Sensor",
-            "payload": "Apple Sensor",
+            "payload": "sensor data for the first farm",
           },{
             "type": "postback",
             "title": "Soil analysis",
-            "payload": "Apple Soil",
+            "payload": "soil analysis for the first farm",
           }],
         },{
           "title": "2. Potato parcel",
@@ -48,15 +48,15 @@ function processEvent(event) {
           "buttons": [{
             "type": "web_url",
             "url": "https://www.messenger.com/",
-            "title": "web"
+            "title": "Web"
           },{
             "type": "postback",
             "title": "Sensor",
-            "payload": "Potato Sensor",
+            "payload": "sensor data for the second farm",
           },{
             "type": "postback",
             "title": "Soil analysis",
-            "payload": "Potato Soil",
+            "payload": "soil analysis for the second farm",
           }],
         }		
 		,{
@@ -66,15 +66,15 @@ function processEvent(event) {
           "buttons": [{
             "type": "web_url",
             "url": "http://ssi.gov.gr/contactus.php",
-            "title": "web"
+            "title": "Web"
           },{
             "type": "postback",
             "title": "Sensor",
-            "payload": "Tomato Sensor",
+            "payload": "sensor data for the third farm",
           },{
             "type": "postback",
             "title": "Soil analysis",
-            "payload": "Tomato Soil",
+            "payload": "soil analysis for the third farm",
           }
 		  ],
         }
