@@ -32,10 +32,14 @@ function processEvent(event) {
             "type": "web_url",
             "url": "http://ssi.gov.gr/samplecode.php",
             "title": "web"
-          }, {
+          },{
             "type": "postback",
-            "title": "Ναι",
-            "payload": "Εδαφολογική ανάλυση",
+            "title": "Sensor",
+            "payload": "Apple Sensor",
+          },{
+            "type": "postback",
+            "title": "Soil analysis",
+            "payload": "Apple Soil",
           }],
         },{
           "title": "2. Potato parcel",
@@ -45,10 +49,14 @@ function processEvent(event) {
             "type": "web_url",
             "url": "https://www.messenger.com/",
             "title": "web"
-          }, {
+          },{
             "type": "postback",
-            "title": "Ναι",
-            "payload": "Καλλιέργεια",
+            "title": "Sensor",
+            "payload": "Potato Sensor",
+          },{
+            "type": "postback",
+            "title": "Soil analysis",
+            "payload": "Potato Soil",
           }],
         }		
 		,{
@@ -61,9 +69,14 @@ function processEvent(event) {
             "title": "web"
           },{
             "type": "postback",
-            "title": "Ναι",
-            "payload": "Διεύθυνση",
-          } ],
+            "title": "Sensor",
+            "payload": "Tomato Sensor",
+          },{
+            "type": "postback",
+            "title": "Soil analysis",
+            "payload": "Tomato Soil",
+          }
+		  ],
         }
 		]
       }
@@ -166,6 +179,12 @@ function processEvent(event) {
                         sendFBMessage(sender, {text: err.message });
                     }
                 } else if (isDefined(responseText)) {
+					
+					if (action=='help' )					
+					{						
+						sendFBMessage(sender, messageData1);
+					};	
+					
                     console.log('Response as text message');
                     // facebook API limit for text length is 320,
                     // so we split message if needed
