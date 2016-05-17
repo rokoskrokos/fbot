@@ -209,7 +209,30 @@ function processEvent(event) {
 						}, 2000);
 						
 				};	
-				
+				if (action=='chartyes' )					
+						{		
+						var repl123='http://195.251.59.51/json/photorig/therm_chart.jpg';
+						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
+						//console.log( 'repl99 ======',repl99);
+						var messageData123 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl123+""
+											  }
+											}
+										  };
+						sendFBMessage(sender, messageData123);
+						
+						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
+						//setTimeout(function(){
+						//var wrwr=textArray1[randomNumber1];						
+						//sendFBMessage(sender, messageData123);
+						//sendFBMessage(sender, {text: wrwr});
+						//}, 2000);
+						
+				};	
 					
                     console.log('Response as text message');
                     // facebook API limit for text length is 320,
