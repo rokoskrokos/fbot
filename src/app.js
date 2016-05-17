@@ -196,12 +196,6 @@ function processEvent(event) {
 											  "payload":{
 												"url":""+repl123+""
 											  }
-											},
-											{
-											  "type":"image",
-											  "payload":{
-												"url":""+repl456+""
-											  }
 											}
 										  };
 						sendFBMessage(sender, messageData123);
