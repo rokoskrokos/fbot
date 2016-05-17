@@ -187,13 +187,20 @@ function processEvent(event) {
 					
 					if (action=='sensor' && response.result.actionIncomplete==false )					
 						{		
-						var repl123='http://195.251.59.51/json/photorig/hmer_therm.jpg';
+						var repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
+						var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
 						//console.log( 'repl99 ======',repl99);
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",
 											  "payload":{
 												"url":""+repl123+""
+											  }
+											},
+											{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl456+""
 											  }
 											}
 										  };
