@@ -187,7 +187,7 @@ function processEvent(event) {
 					
 					if (action=='sensor' && response.result.actionIncomplete==false )					
 						{		
-						var repl123='http://195.251.59.51/json/photos_rigani/hmer_therm.jpg';
+						var repl123='http://195.251.59.51/json/photorig/hmer_therm.jpg';
 						//console.log( 'repl99 ======',repl99);
 						var messageData123 ={
 											"attachment":{
