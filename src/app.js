@@ -211,7 +211,7 @@ function processEvent(event) {
 				};	
 				if (action=='chartyes' )					
 						{		
-						var repl123='http://195.251.59.51/json/photorig/therm_chart.jpg';
+						var repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
 						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
 						//console.log( 'repl99 ======',repl99);
 						var messageData123 ={
