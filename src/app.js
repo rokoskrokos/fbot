@@ -280,7 +280,8 @@ function processEvent(event) {
 											}
 										  };
 						sendFBMessage(sender, messageData123);
-						anythingelse();
+						var ttt=anythingelse();
+						sendFBMessage(sender, {text: ttt});
 						
 						// var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						// var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
@@ -304,8 +305,8 @@ function processEvent(event) {
 											}
 										  };
 						sendFBMessage(sender, messageData123);
-						anythingelse();
-						
+						var ttt=anythingelse();
+						sendFBMessage(sender, {text: ttt});
 						// var textArray1 = ['Anything else? :-) or else call me by name "Farmbot)','Do you want something else?', "That 's it for now..call Farmbot for anything else.",'If you need anything else call Farmbot','This is it for now. Call Farmbot for anything else','Something else? (or just call Farmbot :) )'];
 						// var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
 						// setTimeout(function(){
@@ -328,7 +329,8 @@ function processEvent(event) {
 											}
 										  };
 						sendFBMessage(sender, messageData123);
-						anythingelse();
+						var ttt=anythingelse();
+						sendFBMessage(sender, {text: ttt});
 						
 						// var textArray1 = ['Anything else? :-) or else call me by name "Farmbot)','Do you want something else?', "That 's it for now..call Farmbot for anything else.",'If you need anything else call Farmbot','This is it for now. Call Farmbot for anything else','Something else? (or just call Farmbot :) )'];
 						// var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
@@ -366,8 +368,9 @@ function anythingelse() {
 						setTimeout(function(){
 						var wrwr=textArray1[randomNumber1];						
 						//sendFBMessage(sender, messageData123);
-						sendFBMessage(sender, {text: wrwr});
+						//sendFBMessage(sender, {text: wrwr});
 						}, 2000);
+						return wrwr;
 }
 
 
