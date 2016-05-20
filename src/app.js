@@ -152,10 +152,10 @@ function processEvent(event) {
 										  
 										  										  
 					sendFBMessage(sender, messageData123);
-						var ttt=anythingelse();
-						setTimeout(function(){						
-						sendFBMessage(sender, {text: ttt});
-						}, 2000);
+						// var ttt=anythingelse();
+						// setTimeout(function(){						
+						// sendFBMessage(sender, {text: ttt});
+						// }, 2000);
 						
 						
 				};	
@@ -316,11 +316,11 @@ function processEvent(event) {
 											}
 										  };
 						sendFBMessage(sender, messageData123);
-						var ttt=anythingelse();
+						// var ttt=anythingelse();
 						
-						setTimeout(function(){						
-						sendFBMessage(sender, {text: ttt});
-						}, 2000);
+						// setTimeout(function(){						
+						// sendFBMessage(sender, {text: ttt});
+						// }, 2000);
 						
 						
 						//console.log( 'ttt ======',ttt);
