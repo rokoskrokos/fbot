@@ -120,6 +120,7 @@ function processEvent(event) {
 						{	
                       var repl123;
 					  //var farm=response.result.parameters.farm;
+					  console.log( 'response.result.parameters.farm ======',response.result.parameters.farm);
 					  switch(response.result.parameters.farm) {
 								case "first farm":
 									console.log( 'case first farm ======');
