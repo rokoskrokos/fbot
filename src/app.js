@@ -186,7 +186,10 @@ function processEvent(event) {
 					};	
 					
 					if (action=='sensor' && response.result.actionIncomplete==false )					
-						{		
+						{	
+                        //parameter.farm ="second farm"	
+						//var repl123='http://195.251.59.51/json/"+parameter.farm+"/hthermbig.jpg';
+						//or var repl123='http://195.251.59.51/json/photorig/"+left(parameter.farm,3)+"hthermbig.jpg';
 						var repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
 						var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
 						//console.log( 'repl99 ======',repl99);
