@@ -120,7 +120,7 @@ function processEvent(event) {
 						{	
                       var repl123;
 					  //var farm=response.result.parameters.farm;
-					  console.log( 'response.result.parameters.farm ======',response.result.parameters.farm);
+					  //console.log( 'response.result.parameters.farm ======',response.result.parameters.farm);
 					  switch(response.result.parameters.farm) {
 								case "first farm":
 									console.log( 'case first farm ======');
@@ -152,10 +152,12 @@ function processEvent(event) {
 										  
 										  										  
 					sendFBMessage(sender, messageData123);
-						// var ttt=anythingelse();
-						// setTimeout(function(){						
-						// sendFBMessage(sender, {text: ttt});
-						// }, 2000);
+						var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
+						setTimeout(function(){
+						var wrwr=textArray1[randomNumber1];					
+						sendFBMessage(sender, {text: wrwr});
+						}, 2000);
 						
 						
 				};	
@@ -326,12 +328,12 @@ function processEvent(event) {
 						//console.log( 'ttt ======',ttt);
 						//sendFBMessage(sender, {text: ttt});
 						
-						// var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
-						// var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
-						// setTimeout(function(){
-						// var wrwr=textArray1[randomNumber1];					
-						// sendFBMessage(sender, {text: wrwr});
-						// }, 2000);
+						var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
+						setTimeout(function(){
+						var wrwr=textArray1[randomNumber1];					
+						sendFBMessage(sender, {text: wrwr});
+						}, 2000);
 						
 				};	
 				if (action=='chartyes'  )					
