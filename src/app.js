@@ -162,7 +162,7 @@ function processEvent(event) {
 						}, 2000);
 						
 				};	
-				if (action=='chartyes' && response.result.actionIncomplete==false  )					
+				if (action=='chartyes'  )					
 						{		
 						var repl123='http://195.251.59.51/json/photorig/therm_chart2.jpg';
 						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
@@ -186,7 +186,7 @@ function processEvent(event) {
 						//}, 2000);
 						
 				};	
-				if (action=='analysis' )					
+				if (action=='analysis' && response.result.actionIncomplete==false)					
 						{		
 						var repl1='http://195.251.59.51/json/photorig/soil.jpg';
 						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
@@ -290,7 +290,7 @@ function processEvent(event) {
 						}, 2000);
 						
 				};	
-				if (action=='chartyes' && response.result.actionIncomplete==false )					
+				if (action=='chartyes'  )					
 						{		
 						var repl123='http://195.251.59.51/json/photorig/therm_chart2.jpg';
 						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
@@ -314,7 +314,7 @@ function processEvent(event) {
 						}, 2000);
 						
 				};	
-				if (action=='analysis' )					
+				if (action=='analysis' && response.result.actionIncomplete==false )					
 						{		
 						var repl1='http://195.251.59.51/json/photorig/soil.jpg';
 						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
