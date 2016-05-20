@@ -281,8 +281,14 @@ function processEvent(event) {
 										  };
 						sendFBMessage(sender, messageData123);
 						var ttt=anythingelse();
-						console.log( 'ttt ======',ttt);
+						
+						setTimeout(function(){						
 						sendFBMessage(sender, {text: ttt});
+						}, 2000);
+						
+						
+						//console.log( 'ttt ======',ttt);
+						//sendFBMessage(sender, {text: ttt});
 						
 						// var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						// var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
@@ -307,8 +313,10 @@ function processEvent(event) {
 										  };
 						sendFBMessage(sender, messageData123);
 						var ttt=anythingelse();
-						console.log( 'ttt ======',ttt);
+						setTimeout(function(){						
 						sendFBMessage(sender, {text: ttt});
+						}, 2000);
+						
 						// var textArray1 = ['Anything else? :-) or else call me by name "Farmbot)','Do you want something else?', "That 's it for now..call Farmbot for anything else.",'If you need anything else call Farmbot','This is it for now. Call Farmbot for anything else','Something else? (or just call Farmbot :) )'];
 						// var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
 						// setTimeout(function(){
@@ -332,8 +340,9 @@ function processEvent(event) {
 										  };
 						sendFBMessage(sender, messageData123);
 						var ttt=anythingelse();
-						console.log( 'ttt ======',ttt);
+						setTimeout(function(){						
 						sendFBMessage(sender, {text: ttt});
+						}, 2000);
 						
 						// var textArray1 = ['Anything else? :-) or else call me by name "Farmbot)','Do you want something else?', "That 's it for now..call Farmbot for anything else.",'If you need anything else call Farmbot','This is it for now. Call Farmbot for anything else','Something else? (or just call Farmbot :) )'];
 						// var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
@@ -370,13 +379,13 @@ function anythingelse() {
 						var randomNumber1 = Math.floor(Math.random()*textArray1.length);
 						var wrwr;
 						wrwr=textArray1[randomNumber1];							
-						setTimeout(function(){						
-						console.log( 'wrwr ======',wrwr);
+						//setTimeout(function(){						
+						//console.log( 'wrwr ======',wrwr);
 						//return wrwr;						
 						//sendFBMessage(sender, messageData123);
 						//sendFBMessage(sender, {text: wrwr});
-						}, 2000);
-						console.log( 'wrwr2 ======',wrwr);
+						//}, 2000);
+						//console.log( 'wrwr2 ======',wrwr);
 						return wrwr;
 }
 
