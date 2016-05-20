@@ -372,6 +372,7 @@ function anythingelse() {
 						//sendFBMessage(sender, messageData123);
 						//sendFBMessage(sender, {text: wrwr});
 						}, 2000);
+						console.log( 'wrwr2 ======',wrwr);
 						return wrwr;
 }
 
