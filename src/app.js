@@ -101,35 +101,7 @@ function processEvent(event) {
 						let responseText = response.result.fulfillment.speech;
 						let responseData = response.result.fulfillment.data;
 						let action = response.result.action;						
-						//console.log( 'postback   responseText====', responseText);
-						//console.log( '66    action====', action);
 						
-						// if (action=='addressyes' )					
-						// {		
-						// var repl123='http://195.251.59.51/json/photos/adress.jpg';						
-						// var messageData123 ={
-											// "attachment":{
-											  // "type":"image",
-											  // "payload":{
-												// "url":""+repl123+""
-											  // }
-											// }
-										  // };
-						// sendFBMessage(sender, messageData123);
-						// setTimeout(function(){
-						// var wrwr='Θέλετε και να μας βρείτε;';			
-						// sendFBMessage(sender, {text: wrwr});
-						// }, 2000);
-						
-						// };	
-					
-						
-						 //sendFBMessage(sender, messageData1);
-						// console.log( 'ok');
-					// if(text1 != null && !text1.isEmpty())
-					// {				
-						// console.log('6666666666666666666666666666666 mesa        text1===', text1);
-					// }						
 						if (isDefined(responseData) && isDefined(responseData.facebook)) {
 							try {
 								console.log('Response as formatted message');
@@ -146,11 +118,27 @@ function processEvent(event) {
 					
 					if (action=='sensor' && response.result.actionIncomplete==false )					
 						{	
-                        //parameter.farm ="second farm"	
-						//var repl123='http://195.251.59.51/json/"+parameter.farm+"/hthermbig.jpg';
-						//or var repl123='http://195.251.59.51/json/photorig/"+left(parameter.farm,3)+"hthermbig.jpg';
-						var repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
-						var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
+                      var repl123;
+					  //var farm=response.result.parameters.farm;
+					  switch(response.result.parameters.farm) {
+								case "first farm":
+									console.log( 'case first farm ======');
+									repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
+									break;
+								case "second farm":
+									console.log( 'case second farm ======');
+									repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
+									break;
+								case "third farm":
+									console.log( 'case third farm ======');
+									repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
+									break;
+								//default:
+								//	default code block
+							}
+					  
+						//var repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
+						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
 						//console.log( 'repl99 ======',repl99);
 						var messageData123 ={
 											"attachment":{
@@ -160,9 +148,12 @@ function processEvent(event) {
 											  }
 											}
 										  };
+										  
+										  
+										  
 						sendFBMessage(sender, messageData123);
 						
-						var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?', 'Whould you like a chart?'];
 						var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
 						setTimeout(function(){
 						var wrwr=textArray1[randomNumber1];						
