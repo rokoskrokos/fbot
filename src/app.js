@@ -368,12 +368,13 @@ function anythingelse() {
 						var wrwr;						
 						setTimeout(function(){
 						wrwr=textArray1[randomNumber1];	
-						console.log( 'wrwr ======',wrwr);						
+						console.log( 'wrwr ======',wrwr);
+						return wrwr;						
 						//sendFBMessage(sender, messageData123);
 						//sendFBMessage(sender, {text: wrwr});
 						}, 2000);
-						console.log( 'wrwr2 ======',wrwr);
-						return wrwr;
+						//console.log( 'wrwr2 ======',wrwr);
+						//return wrwr;
 }
 
 
