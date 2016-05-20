@@ -138,6 +138,93 @@ function processEvent(event) {
 								sendFBMessage(sender, {text: err.message });
 							}
 						} else if (isDefined(responseText)) {	
+						
+						if (action=='help' )					
+					{						
+						sendFBMessage(sender, messageData1);
+					};	
+					
+					if (action=='sensor' && response.result.actionIncomplete==false )					
+						{	
+                        //parameter.farm ="second farm"	
+						//var repl123='http://195.251.59.51/json/"+parameter.farm+"/hthermbig.jpg';
+						//or var repl123='http://195.251.59.51/json/photorig/"+left(parameter.farm,3)+"hthermbig.jpg';
+						var repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
+						var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
+						//console.log( 'repl99 ======',repl99);
+						var messageData123 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl123+""
+											  }
+											}
+										  };
+						sendFBMessage(sender, messageData123);
+						
+						var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
+						setTimeout(function(){
+						var wrwr=textArray1[randomNumber1];						
+						//sendFBMessage(sender, messageData123);
+						sendFBMessage(sender, {text: wrwr});
+						}, 2000);
+						
+				};	
+				if (action=='chartyes' )					
+						{		
+						var repl123='http://195.251.59.51/json/photorig/therm_chart2.jpg';
+						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
+						//console.log( 'repl99 ======',repl99);
+						var messageData123 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl123+""
+											  }
+											}
+										  };
+						sendFBMessage(sender, messageData123);
+						
+						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
+						//setTimeout(function(){
+						//var wrwr=textArray1[randomNumber1];						
+						//sendFBMessage(sender, messageData123);
+						//sendFBMessage(sender, {text: wrwr});
+						//}, 2000);
+						
+				};	
+				if (action=='analysis' )					
+						{		
+						var repl1='http://195.251.59.51/json/photorig/soil.jpg';
+						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
+						//console.log( 'repl99 ======',repl99);
+						var messageData123 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl1+""
+											  }
+											}
+										  };
+						sendFBMessage(sender, messageData123);
+						
+						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
+						//setTimeout(function(){
+						//var wrwr=textArray1[randomNumber1];						
+						//sendFBMessage(sender, messageData123);
+						//sendFBMessage(sender, {text: wrwr});
+						//}, 2000);
+						
+				};
+						
+						
+						
+						
+						
+						
 						// console.log('6666666666666666666666666666666 mesa        responseText===', responseText);
 							sendFBMessage(sender, {text:responseText});			
 						}
