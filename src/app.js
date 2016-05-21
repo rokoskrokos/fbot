@@ -294,15 +294,15 @@ function processEvent(event) {
 					  //var farm=response.result.parameters.farm;
 					  switch(response.result.parameters.farm) {
 								case "first farm":
-									console.log( 'case first farm ======');
+									//console.log( 'case first farm ======');
 									repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
 									break;
 								case "second farm":
-									console.log( 'case second farm ======');
+									//console.log( 'case second farm ======');
 									repl123='http://195.251.59.51/json/photorig/hthermbig2.jpg';
 									break;
 								case "third farm":
-									console.log( 'case third farm ======');
+									//console.log( 'case third farm ======');
 									repl123='http://195.251.59.51/json/photorig/hthermbig3.jpg';
 									break;
 								//default:
@@ -340,7 +340,7 @@ function processEvent(event) {
 						{		
 						 var repl123;
 					  //var farm=response.result.parameters.farm;
-					  switch(response.result.parameters.farm) {
+					  switch(response.result.context[0].parameters.farm) {
 								case "first farm":
 									console.log( 'case first farm ======');
 									repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
