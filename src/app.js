@@ -165,7 +165,7 @@ function processEvent(event) {
 						{		
 						 var repl123;
 					  //var farm=response.result.parameters.farm;
-					  switch(response.result.context[0].parameters.farm) {
+					  switch(response.result.contexts[0].parameters.farm) {
 								case "first farm":
 									console.log( 'case first farm ======');
 									repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
@@ -340,7 +340,7 @@ function processEvent(event) {
 						{		
 						 var repl123;
 					  //var farm=response.result.parameters.farm;
-					  switch(response.result.context[0].parameters.farm) {
+					  switch(response.result.contexts[0].parameters.farm) {
 								case "first farm":
 									console.log( 'case first farm ======');
 									repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
