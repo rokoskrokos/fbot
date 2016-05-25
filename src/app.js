@@ -118,21 +118,21 @@ function processEvent(event) {
 					
 					if (action=='sensor' && response.result.actionIncomplete==false )					
 						{	
-                      var repl123;
+                      var repl123456;
 					  //var farm=response.result.parameters.farm;
 					  //console.log( 'response.result.parameters.farm ======',response.result.parameters.farm);
 					  switch(response.result.parameters.farm) {
 								case "first farm":
 									//console.log( 'case first farm ======');
-									repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
+									repl123456='http://195.251.59.51/json/photorig/hthermbig1.jpg';
 									break;
 								case "second farm":
 									//console.log( 'case second farm ======');
-									repl123='http://195.251.59.51/json/photorig/hthermbig2.jpg';
+									repl123456='http://195.251.59.51/json/photorig/hthermbig2.jpg';
 									break;
 								case "third farm":
 									//console.log( 'case third farm ======');
-									repl123='http://195.251.59.51/json/photorig/hthermbig3.jpg';
+									repl123456='http://195.251.59.51/json/photorig/hthermbig3.jpg';
 									break;
 								//default:
 								//	default code block
@@ -141,17 +141,17 @@ function processEvent(event) {
 						//var repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
 						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
 						//console.log( 'repl99 ======',repl99);
-						var messageData123 ={
+						var messageData123456 ={
 											"attachment":{
 											  "type":"image",
 											  "payload":{
-												"url":""+repl123+""
+												"url":""+repl123456+""
 											  }
 											}
 										  };
 										  
 										  										  
-					sendFBMessage(sender, messageData123);
+					sendFBMessage(sender, messageData123456);
 						var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
 						setTimeout(function(){
@@ -163,35 +163,35 @@ function processEvent(event) {
 				};	
 				if (action=='chartyes'  )					
 						{		
-						 var repl123;
+						 var repl123321;
 					  //var farm=response.result.parameters.farm;
 					  switch(response.result.contexts[0].parameters.farm) {
 								case "first farm":
 									console.log( 'case first farm ======');
-									repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
+									repl123321='http://195.251.59.51/json/photorig/therm_chart1.jpg';
 									break;
 								case "second farm":
 									console.log( 'case second farm ======');
-									repl123='http://195.251.59.51/json/photorig/therm_chart2.jpg';
+									repl123321='http://195.251.59.51/json/photorig/therm_chart2.jpg';
 									break;
 								case "third farm":
 									console.log( 'case third farm ======');
-									repl123='http://195.251.59.51/json/photorig/therm_chart3.jpg';
+									repl123321='http://195.251.59.51/json/photorig/therm_chart3.jpg';
 									break;
 								//default:
 								//	default code block
 							}
-						var messageData123 ={
+						var messageData123321 ={
 											"attachment":{
 											  "type":"image",
 											  "payload":{
-												"url":""+repl123+""
+												"url":""+repl123321+""
 											  }
 											}
 										  };
 										  
 										  
-						sendFBMessage(sender, messageData123);
+						sendFBMessage(sender, messageData123321);
 						var ttt=anythingelse();
 						setTimeout(function(){						
 						sendFBMessage(sender, {text: ttt});
@@ -211,35 +211,35 @@ function processEvent(event) {
 						//var repl1='http://195.251.59.51/json/photorig/soil.jpg';
 										//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
 										//console.log( 'repl99 ======',repl99);
-						 var repl123;
+						 var repl666;
 					  //var farm=response.result.parameters.farm;
 					  switch(response.result.contexts[0].parameters.farm) {
 								case "first farm":
 									console.log( 'case first farm ======');
-									repl123='http://195.251.59.51/json/photorig/soil1.jpg';
+									repl666='http://195.251.59.51/json/photorig/soil1.jpg';
 									break;
 								case "second farm":
 									console.log( 'case second farm ======');
-									repl123='http://195.251.59.51/json/photorig/soil2.jpg';
+									repl666='http://195.251.59.51/json/photorig/soil2.jpg';
 									break;
 								case "third farm":
 									console.log( 'case third farm ======');
-									repl123='http://195.251.59.51/json/photorig/soil3.jpg';
+									repl666='http://195.251.59.51/json/photorig/soil3.jpg';
 									break;
 								//default:
 								//	default code block
 							}
-						var messageData123 ={
+						var messageData666 ={
 											"attachment":{
 											  "type":"image",
 											  "payload":{
-												"url":""+repl123+""
+												"url":""+repl666+""
 											  }
 											}
 										  };
 										  
 						
-						sendFBMessage(sender, messageData123);
+						sendFBMessage(sender, messageData666);
 						var ttt=anythingelse();
 						setTimeout(function(){						
 						sendFBMessage(sender, {text: ttt});
@@ -254,12 +254,7 @@ function processEvent(event) {
 						//}, 2000);
 						
 				};
-						
-						
-						
-						
-						
-						
+					
 						// console.log('6666666666666666666666666666666 mesa        responseText===', responseText);
 							sendFBMessage(sender, {text:responseText});			
 						}
@@ -444,7 +439,7 @@ function processEvent(event) {
 						
 				};	
 					
-                    console.log('Response as text message');
+                    //console.log('Response as text message');
                     // facebook API limit for text length is 320,
                     // so we split message if needed
                     var splittedText = splitResponse(responseText);
