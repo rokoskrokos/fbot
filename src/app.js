@@ -208,17 +208,36 @@ function processEvent(event) {
 				};	
 				if (action=='analysis' && response.result.actionIncomplete==false)					
 						{		
-						var repl1='http://195.251.59.51/json/photorig/soil.jpg';
-						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
-						//console.log( 'repl99 ======',repl99);
+						//var repl1='http://195.251.59.51/json/photorig/soil.jpg';
+										//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
+										//console.log( 'repl99 ======',repl99);
+						 var repl123;
+					  //var farm=response.result.parameters.farm;
+					  switch(response.result.contexts[0].parameters.farm) {
+								case "first farm":
+									console.log( 'case first farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil1.jpg';
+									break;
+								case "second farm":
+									console.log( 'case second farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil2.jpg';
+									break;
+								case "third farm":
+									console.log( 'case third farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil3.jpg';
+									break;
+								//default:
+								//	default code block
+							}
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",
 											  "payload":{
-												"url":""+repl1+""
+												"url":""+repl123+""
 											  }
 											}
 										  };
+										  
 						
 						sendFBMessage(sender, messageData123);
 						var ttt=anythingelse();
@@ -380,17 +399,33 @@ function processEvent(event) {
 				};	
 				if (action=='analysis' && response.result.actionIncomplete==false )					
 						{		
-						var repl1='http://195.251.59.51/json/photorig/soil.jpg';
-						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
-						//console.log( 'repl99 ======',repl99);
+						 var repl123;
+					  //var farm=response.result.parameters.farm;
+					  switch(response.result.contexts[0].parameters.farm) {
+								case "first farm":
+									console.log( 'case first farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil1.jpg';
+									break;
+								case "second farm":
+									console.log( 'case second farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil2.jpg';
+									break;
+								case "third farm":
+									console.log( 'case third farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil3.jpg';
+									break;
+								//default:
+								//	default code block
+							}
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",
 											  "payload":{
-												"url":""+repl1+""
+												"url":""+repl123+""
 											  }
 											}
 										  };
+										  
 						sendFBMessage(sender, messageData123);
 						var ttt=anythingelse();
 						setTimeout(function(){						
