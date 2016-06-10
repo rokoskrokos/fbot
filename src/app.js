@@ -38,12 +38,8 @@ function processEvent(event) {
             "payload": "sensor data",
           },{
             "type": "postback",
-            "title": "Soil analysis",
-            "payload": "soil analysis",
-          },{
-            "type": "postback",
-            "title": "Leafs analysis",
-            "payload": "leafs analysis",
+            "title": "Soil- Leafs analysis",
+            "payload": "analysis",
           }],
         }
 		]
