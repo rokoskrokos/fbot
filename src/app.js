@@ -25,58 +25,26 @@ function processEvent(event) {
       "payload": {
         "template_type": "generic",
         "elements": [{
-          "title": "1. Apple farm",
-          "subtitle": "Farm in Thessaloniki area",
-          "image_url": "http://www.agronews.gr/files/temp/605E6F4B28B0612541320C6C50EA2686.jpg",
+          "title": "1. Oregano farm",
+          "subtitle": "Farm in Chalkidiki area",
+          "image_url": "http://195.251.59.51/json/photorig/OreganoFarm.jpg",
           "buttons": [{
-            "type": "web_url",
-            "url": "http://ssi.gov.gr/samplecode.php",
-            "title": "Web"
+            "type":"web_url",
+			"url":"http://maps.google.com/maps?q=loc:40.510201,23.143003",
+			"title":"Google maps"
           },{
             "type": "postback",
             "title": "Sensor",
-            "payload": "sensor data for the first farm",
+            "payload": "sensor data",
           },{
             "type": "postback",
             "title": "Soil analysis",
-            "payload": "soil analysis for the first farm",
+            "payload": "soil analysis",
+          },{
+            "type": "postback",
+            "title": "Leafs analysis",
+            "payload": "leafs analysis",
           }],
-        },{
-          "title": "2. Potato farm",
-          "subtitle": "Farm in Seres area",
-          "image_url": "http://sspga.ca/wordpress_sspga/wp-content/uploads/2015/01/IMG_0239-website-size.jpg",
-          "buttons": [{
-            "type": "web_url",
-            "url": "https://www.messenger.com/",
-            "title": "Web"
-          },{
-            "type": "postback",
-            "title": "Sensor",
-            "payload": "sensor data for the second farm",
-          },{
-            "type": "postback",
-            "title": "Soil analysis",
-            "payload": "soil analysis for the second farm",
-          }],
-        }		
-		,{
-          "title": "3. Tomato farm",
-          "subtitle": "Farm in Thessaloniki area",
-          "image_url": "http://laxanokipos.com/LaxNew/wp-content/uploads/2015/03/2010_12_13_13-59-%CE%A4%CE%BF%CE%BC%CE%AC%CF%84%CE%B5%CF%82-%CF%85%CF%80%CE%B1%CE%AF%CE%B8%CF%81%CE%B9%CE%B5%CF%82-%CE%BC%CE%B5-mulch.jpg",
-          "buttons": [{
-            "type": "web_url",
-            "url": "http://ssi.gov.gr/contactus.php",
-            "title": "Web"
-          },{
-            "type": "postback",
-            "title": "Sensor",
-            "payload": "sensor data for the third farm",
-          },{
-            "type": "postback",
-            "title": "Soil analysis",
-            "payload": "soil analysis for the third farm",
-          }
-		  ],
         }
 		]
       }
