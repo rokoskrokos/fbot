@@ -34,7 +34,7 @@ function processEvent(event) {
 			"title":"Google maps"
           },{
             "type": "postback",
-            "title": "Sensor",
+            "title": "Sensor data",
             "payload": "sensor data",
           },{
             "type": "postback",
