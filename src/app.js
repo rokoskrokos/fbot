@@ -39,7 +39,7 @@ function processEvent(event) {
           },{
             "type": "postback",
             "title": "Soil-Leafs analysis",
-            "payload": "analysis",
+            "payload": "analysisfull",
           }],
         }
 		]
@@ -177,14 +177,16 @@ function processEvent(event) {
 										//console.log( 'repl99 ======',repl99);
 						 var repl666;
 					  //var farm=response.result.parameters.farm;
+					 // var analelse;
 					  
 					  switch(response.result.contexts[0].parameters.typeofanalysis) {
 								case "soil":
-									console.log( 'case first farm ======');
+									//console.log( 'case first farm ======');
 									repl666='http://195.251.59.51/json/photorig/soils.jpg';
+									//analelse
 									break;
 								case "leafs":
-									console.log( 'case second farm ======');
+									//console.log( 'case second farm ======');
 									repl666='http://195.251.59.51/json/photorig/leafs.jpg';
 									break;								
 							}
@@ -202,10 +204,20 @@ function processEvent(event) {
 										  
 						
 						sendFBMessage(sender, messageData666);
-						var ttt=anythingelse();
-						setTimeout(function(){						
-						sendFBMessage(sender, {text: ttt});
+						
+						var textArray3344 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);			
+						setTimeout(function(){
+						var wrwr3344=textArray1[randomNumber3344];					
+						sendFBMessage(sender, {text: wrwr3344});
 						}, 2000);
+						
+											
+						//--------------- old one
+						// var ttt=anythingelse();
+						// setTimeout(function(){						
+						// sendFBMessage(sender, {text: ttt});
+						// }, 2000);
 						
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
@@ -216,6 +228,81 @@ function processEvent(event) {
 						//}, 2000);
 						
 				};
+				
+				if (action=='analysisfull' && response.result.actionIncomplete==false)					
+						{		
+						//var repl1='http://195.251.59.51/json/photorig/soil.jpg';
+										//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
+										//console.log( 'repl99 ======',repl99);
+						 var repl34;
+					  //var farm=response.result.parameters.farm;
+					 // var analelse;
+					  repl34='http://195.251.59.51/json/photorig/soils.jpg';
+					  
+					  // switch(response.result.contexts[0].parameters.typeofanalysis) {
+								// case "soil":
+									
+									// repl34='http://195.251.59.51/json/photorig/soils.jpg';
+									
+									// break;
+								// case "leafs":
+									
+									// repl34='http://195.251.59.51/json/photorig/leafs.jpg';
+									// break;								
+							// }
+					  					  
+					  
+					 
+						var messageData34 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl34+""
+											  }
+											}
+										  };
+										  
+						
+						sendFBMessage(sender, messageData34);
+						
+						var textArray3344 = ['Now for the leafs :-) ','Leafs analysis on the way', 'We continue with leafs?','Next leafs analysis','Leafs next','Leafs analysis next'];
+						var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);			
+						setTimeout(function(){
+						var wrwr3344=textArray1[randomNumber3344];					
+						sendFBMessage(sender, {text: wrwr3344});
+						}, 2000);
+						
+						repl34='http://195.251.59.51/json/photorig/leafs.jpg';
+						var messageData34 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl34+""
+											  }
+											}
+										  };
+										  
+						
+						sendFBMessage(sender, messageData34);
+						
+											
+						//--------------- old one
+						// var ttt=anythingelse();
+						// setTimeout(function(){						
+						// sendFBMessage(sender, {text: ttt});
+						// }, 2000);
+						
+						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
+						//setTimeout(function(){
+						//var wrwr=textArray1[randomNumber1];						
+						//sendFBMessage(sender, messageData123);
+						//sendFBMessage(sender, {text: wrwr});
+						//}, 2000);
+						
+				};
+				
+				
 					
 						// console.log('6666666666666666666666666666666 mesa        responseText===', responseText);
 							sendFBMessage(sender, {text:responseText});			
