@@ -177,22 +177,20 @@ function processEvent(event) {
 										//console.log( 'repl99 ======',repl99);
 						 var repl666;
 					  //var farm=response.result.parameters.farm;
-					  switch(response.result.contexts[0].parameters.farm) {
-								case "first farm":
+					  
+					  switch(response.result.contexts[0].parameters.typeofanalysis) {
+								case "soil":
 									console.log( 'case first farm ======');
-									repl666='http://195.251.59.51/json/photorig/soil1.jpg';
+									repl666='http://195.251.59.51/json/photorig/soils.jpg';
 									break;
-								case "second farm":
+								case "leafs":
 									console.log( 'case second farm ======');
-									repl666='http://195.251.59.51/json/photorig/soil2.jpg';
-									break;
-								case "third farm":
-									console.log( 'case third farm ======');
-									repl666='http://195.251.59.51/json/photorig/soil3.jpg';
-									break;
-								//default:
-								//	default code block
+									repl666='http://195.251.59.51/json/photorig/leafs.jpg';
+									break;								
 							}
+					  					  
+					  
+					 
 						var messageData666 ={
 											"attachment":{
 											  "type":"image",
