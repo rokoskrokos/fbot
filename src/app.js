@@ -27,7 +27,7 @@ function processEvent(event) {
         "elements": [{
           "title": "1. Oregano farm",
           "subtitle": "Farm in Thessaloniki area",
-          "image_url": "http://195.251.59.51/json/photorig/OreganoFarm2.jpg",
+          "image_url": "http://195.251.59.51/json/photorig/of2.jpg",
           "buttons": [{
             "type":"web_url",
 			"url":"http://maps.google.com/maps?q=loc:40.510201,23.143003",
@@ -286,7 +286,7 @@ function processEvent(event) {
 										  
 						
 						sendFBMessage(sender, messageData34);
-						}, 2500);
+						}, 3000);
 						
 						
 											
@@ -294,7 +294,7 @@ function processEvent(event) {
 						  var ttt=anythingelse();
 						  setTimeout(function(){						
 						  sendFBMessage(sender, {text: ttt});
-						  }, 3500);
+						  }, 4000);
 						
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
