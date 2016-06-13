@@ -265,12 +265,13 @@ function processEvent(event) {
 						
 						sendFBMessage(sender, messageData34);
 						
+						
 						var textArray3344 = ['Now for the leafs :-) ','Leafs analysis on the way:', 'We continue with leafs?','Next leafs analysis:','Leafs next:','Leafs analysis next'];
-						var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);			
+						var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);		
 						setTimeout(function(){
 						var wrwr3344=textArray3344[randomNumber3344];					
 						sendFBMessage(sender, {text: wrwr3344});
-						}, 1500);
+						}, 2000);
 						
 						setTimeout(function(){
 						repl34='http://195.251.59.51/json/photorig/leafs.jpg';
@@ -285,7 +286,7 @@ function processEvent(event) {
 										  
 						
 						sendFBMessage(sender, messageData34);
-						}, 2000);
+						}, 2500);
 						
 						
 											
@@ -293,7 +294,7 @@ function processEvent(event) {
 						  var ttt=anythingelse();
 						  setTimeout(function(){						
 						  sendFBMessage(sender, {text: ttt});
-						  }, 2500);
+						  }, 2900);
 						
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
