@@ -27,7 +27,7 @@ function processEvent(event) {
         "elements": [{
           "title": "1. Oregano farm",
           "subtitle": "Farm in Chalkidiki area",
-          "image_url": "http://195.251.59.51/json/photorig/OreganoFarm1.jpg",
+          "image_url": "http://195.251.59.51/json/photorig/OreganoFarm2.jpg",
           "buttons": [{
             "type":"web_url",
 			"url":"http://maps.google.com/maps?q=loc:40.510201,23.143003",
