@@ -271,9 +271,9 @@ function processEvent(event) {
 						setTimeout(function(){
 						var wrwr3344=textArray3344[randomNumber3344];					
 						sendFBMessage(sender, {text: wrwr3344});
-						}, 3000);
+						}, 4000);
 						
-						setTimeout(function(){
+						//setTimeout(function(){
 						repl34='http://195.251.59.51/json/photorig/leafs.jpg';
 						var messageData34 ={
 											"attachment":{
@@ -286,7 +286,7 @@ function processEvent(event) {
 										  
 						
 						sendFBMessage(sender, messageData34);
-						}, 1000);
+						//}, 1000);
 						
 						
 											
