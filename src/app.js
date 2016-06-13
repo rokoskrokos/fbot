@@ -294,7 +294,7 @@ function processEvent(event) {
 						  var ttt=anythingelse();
 						  setTimeout(function(){						
 						  sendFBMessage(sender, {text: ttt});
-						  }, 3000);
+						  }, 4000);
 						
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
