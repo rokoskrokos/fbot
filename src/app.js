@@ -178,6 +178,7 @@ function processEvent(event) {
 						 var repl666;
 					  //var farm=response.result.parameters.farm;
 					 // var analelse;
+					  console.log( 'response.result.contexts[0].parameters.typeofanalysis ======',response.result.contexts[0].parameters.typeofanalysis)
 					  
 					  switch(response.result.contexts[0].parameters.typeofanalysis) {
 								case "soil":
