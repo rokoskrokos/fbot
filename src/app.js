@@ -268,10 +268,10 @@ function processEvent(event) {
 						
 						var textArray3344 = ['Now for the leafs :-) ','Leafs analysis on the way:', 'We continue with leafs:','Next leafs analysis:','Leafs next:','Leafs analysis next'];
 						var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);		
-						setTimeout(function(){
+						//setTimeout(function(){
 						var wrwr3344=textArray3344[randomNumber3344];					
 						sendFBMessage(sender, {text: wrwr3344});
-						}, 4000);
+						//}, 4000);
 						
 						//setTimeout(function(){
 						repl34='http://195.251.59.51/json/photorig/leafs.jpg';
