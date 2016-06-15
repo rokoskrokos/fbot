@@ -449,36 +449,23 @@ function processEvent(event) {
 				if (action=='analysis' && response.result.actionIncomplete==false )					
 						{		
 						 var repl123;
-						  switch(response.result.contexts[0].parameters.typeofanalysis) {
-								case "soil":
-									//console.log( 'case first farm ======');
-									repl123='http://195.251.59.51/json/photorig/soils.jpg';
-									//analelse
-									break;
-								case "leafs":
-									//console.log( 'case second farm ======');
-									repl123='http://195.251.59.51/json/photorig/leafs.jpg';
-									break;								
-							}
-					  			
-						 
-						 
 					  //var farm=response.result.parameters.farm;
-					  // switch(response.result.contexts[0].parameters.farm) {
-								// case "first farm":
-									// console.log( 'case first farm ======');
-									// repl123='http://195.251.59.51/json/photorig/soil1.jpg';
-									// break;
-								// case "second farm":
-									// console.log( 'case second farm ======');
-									// repl123='http://195.251.59.51/json/photorig/soil2.jpg';
-									// break;
-								// case "third farm":
-									// console.log( 'case third farm ======');
-									// repl123='http://195.251.59.51/json/photorig/soil3.jpg';
-									// break;
-								
-							// }
+					  switch(response.result.contexts[0].parameters.farm) {
+								case "first farm":
+									console.log( 'case first farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil1.jpg';
+									break;
+								case "second farm":
+									console.log( 'case second farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil2.jpg';
+									break;
+								case "third farm":
+									console.log( 'case third farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil3.jpg';
+									break;
+								//default:
+								//	default code block
+							}
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",

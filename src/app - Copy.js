@@ -30,7 +30,7 @@ function processEvent(event) {
           "image_url": "http://195.251.59.51/json/photorig/of2.jpg",
           "buttons": [{
             "type":"web_url",
-			"url":"https://www.google.com/maps?q=loc:40.510201,23.143003&t=h",
+			"url":"http://maps.google.com/maps?q=loc:40.510201,23.143003",
 			"title":"Google maps"
           },{
             "type": "postback",
@@ -83,24 +83,24 @@ function processEvent(event) {
 					if (action=='sensor' && response.result.actionIncomplete==false )					
 						{	
                       var repl123456;
-					  repl123456='http://195.251.59.51/json/photorig/hthermbig1.jpg';
 					  //var farm=response.result.parameters.farm;
 					  //console.log( 'response.result.parameters.farm ======',response.result.parameters.farm);
-									  // switch(response.result.parameters.farm) {
-												// case "first farm":
-																	
-													// repl123456='http://195.251.59.51/json/photorig/hthermbig1.jpg';
-													// break;
-												// case "second farm":
-																	
-													// repl123456='http://195.251.59.51/json/photorig/hthermbig2.jpg';
-													// break;
-												// case "third farm":
-																		
-													// repl123456='http://195.251.59.51/json/photorig/hthermbig3.jpg';
-													// break;
-																		
-											// }
+					  switch(response.result.parameters.farm) {
+								case "first farm":
+									//console.log( 'case first farm ======');
+									repl123456='http://195.251.59.51/json/photorig/hthermbig1.jpg';
+									break;
+								case "second farm":
+									//console.log( 'case second farm ======');
+									repl123456='http://195.251.59.51/json/photorig/hthermbig2.jpg';
+									break;
+								case "third farm":
+									//console.log( 'case third farm ======');
+									repl123456='http://195.251.59.51/json/photorig/hthermbig3.jpg';
+									break;
+								//default:
+								//	default code block
+							}
 					  
 						//var repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
 						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
@@ -449,36 +449,23 @@ function processEvent(event) {
 				if (action=='analysis' && response.result.actionIncomplete==false )					
 						{		
 						 var repl123;
-						  switch(response.result.contexts[0].parameters.typeofanalysis) {
-								case "soil":
-									//console.log( 'case first farm ======');
-									repl123='http://195.251.59.51/json/photorig/soils.jpg';
-									//analelse
-									break;
-								case "leafs":
-									//console.log( 'case second farm ======');
-									repl123='http://195.251.59.51/json/photorig/leafs.jpg';
-									break;								
-							}
-					  			
-						 
-						 
 					  //var farm=response.result.parameters.farm;
-					  // switch(response.result.contexts[0].parameters.farm) {
-								// case "first farm":
-									// console.log( 'case first farm ======');
-									// repl123='http://195.251.59.51/json/photorig/soil1.jpg';
-									// break;
-								// case "second farm":
-									// console.log( 'case second farm ======');
-									// repl123='http://195.251.59.51/json/photorig/soil2.jpg';
-									// break;
-								// case "third farm":
-									// console.log( 'case third farm ======');
-									// repl123='http://195.251.59.51/json/photorig/soil3.jpg';
-									// break;
-								
-							// }
+					  switch(response.result.contexts[0].parameters.farm) {
+								case "first farm":
+									console.log( 'case first farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil1.jpg';
+									break;
+								case "second farm":
+									console.log( 'case second farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil2.jpg';
+									break;
+								case "third farm":
+									console.log( 'case third farm ======');
+									repl123='http://195.251.59.51/json/photorig/soil3.jpg';
+									break;
+								//default:
+								//	default code block
+							}
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",
