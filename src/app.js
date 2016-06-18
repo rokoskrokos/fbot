@@ -128,23 +128,23 @@ function processEvent(event) {
 				if (action=='chartyes'  )					
 						{		
 						 var repl123321;
+						 repl123321='http://195.251.59.51/json/photorig/therm_chart1.jpg';
 					  //var farm=response.result.parameters.farm;
-					  switch(response.result.contexts[0].parameters.farm) {
-								case "first farm":
-									console.log( 'case first farm ======');
-									repl123321='http://195.251.59.51/json/photorig/therm_chart1.jpg';
-									break;
-								case "second farm":
-									console.log( 'case second farm ======');
-									repl123321='http://195.251.59.51/json/photorig/therm_chart2.jpg';
-									break;
-								case "third farm":
-									console.log( 'case third farm ======');
-									repl123321='http://195.251.59.51/json/photorig/therm_chart3.jpg';
-									break;
-								//default:
-								//	default code block
-							}
+					  // switch(response.result.contexts[0].parameters.farm) {
+								// case "first farm":
+									// console.log( 'case first farm ======');
+									// repl123321='http://195.251.59.51/json/photorig/therm_chart1.jpg';
+									// break;
+								// case "second farm":
+									// console.log( 'case second farm ======');
+									// repl123321='http://195.251.59.51/json/photorig/therm_chart2.jpg';
+									// break;
+								// case "third farm":
+									// console.log( 'case third farm ======');
+									// repl123321='http://195.251.59.51/json/photorig/therm_chart3.jpg';
+									// break;
+								
+							// }
 						var messageData123321 ={
 											"attachment":{
 											  "type":"image",
