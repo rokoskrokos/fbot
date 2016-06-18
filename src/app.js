@@ -81,7 +81,8 @@ function processEvent(event) {
 					};	
 					
 					if (action=='sensor' && response.result.actionIncomplete==false )					
-						{	
+						{
+						//sos in postback..here: maybe both data and histogram from air in one graph and then data and histogram from humidity in second							
                       var repl123456;
 					  repl123456='http://195.251.59.51/json/photorig/hthermbig1.jpg';
 					  //var farm=response.result.parameters.farm;
@@ -127,6 +128,7 @@ function processEvent(event) {
 				};	
 				if (action=='chartyes'  )					
 						{		
+					
 						 var repl123321;
 						 repl123321='http://195.251.59.51/json/photorig/therm_chart1.jpg';
 					  //var farm=response.result.parameters.farm;
@@ -359,6 +361,7 @@ function processEvent(event) {
 					
 					if (action=='sensor' && response.result.actionIncomplete==false )					
 						{	
+					//sos in direct call: maybe both data and histogram from air in one graph or data and histogram from humidity in second
                         var repl123;
 					  //var farm=response.result.parameters.farm;
 					  switch(response.result.parameters.farm) {
@@ -408,23 +411,23 @@ function processEvent(event) {
 				if (action=='chartyes'  )					
 						{		
 						 var repl123;
+						 repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
 					  //var farm=response.result.parameters.farm;
-					  switch(response.result.contexts[0].parameters.farm) {
-								case "first farm":
-									console.log( 'case first farm ======');
-									repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
-									break;
-								case "second farm":
-									console.log( 'case second farm ======');
-									repl123='http://195.251.59.51/json/photorig/therm_chart2.jpg';
-									break;
-								case "third farm":
-									console.log( 'case third farm ======');
-									repl123='http://195.251.59.51/json/photorig/therm_chart3.jpg';
-									break;
-								//default:
-								//	default code block
-							}
+					  // switch(response.result.contexts[0].parameters.farm) {
+								// case "first farm":
+									// console.log( 'case first farm ======');
+									// repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
+									// break;
+								// case "second farm":
+									// console.log( 'case second farm ======');
+									// repl123='http://195.251.59.51/json/photorig/therm_chart2.jpg';
+									// break;
+								// case "third farm":
+									// console.log( 'case third farm ======');
+									// repl123='http://195.251.59.51/json/photorig/therm_chart3.jpg';
+									// break;
+								
+							// }
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",
