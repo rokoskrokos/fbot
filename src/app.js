@@ -231,7 +231,9 @@ function processEvent(event) {
 				};
 				
 				if (action=='analysisfull' && response.result.actionIncomplete==false)					
-						{		
+						{	
+
+						//sos Maybe only one graph with both soil and leafs analysis here (both in postback and usual) and different in the simple call					
 						//var repl1='http://195.251.59.51/json/photorig/soil.jpg';
 										//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
 										//console.log( 'repl99 ======',repl99);
@@ -252,8 +254,7 @@ function processEvent(event) {
 									// break;								
 							// }
 					  					  
-					  
-					 sendFBMessage(sender, {text: "1"});
+					  					
 						var messageData34 ={
 											"attachment":{
 											  "type":"image",
@@ -265,48 +266,37 @@ function processEvent(event) {
 										  
 						
 						sendFBMessage(sender, messageData34);
-						//var qp=1;
 						
-						sendFBMessage(sender, {text: "2"});
 						
-						var textArray3344 = ['Now for the leafs :-) ','Leafs analysis on the way:', 'We continue with leafs:','Next leafs analysis:','Leafs next:','Leafs analysis next'];
-						var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);		
-						setTimeout(function(){
-						var wrwr3344=textArray3344[randomNumber3344];					
-						sendFBMessage(sender, {text: wrwr3344});
-						}, 3000);
 						
-						sendFBMessage(sender, {text: "3"});
-						setTimeout(function(){						
-						}, 4000);
-						sendFBMessage(sender, {text: "4"});
-						//setTimeout(function(){
-						//qp=2;
-						repl34='http://195.251.59.51/json/photorig/leafs.jpg';
-						var messageData34 ={
-											"attachment":{
-											  "type":"image",
-											  "payload":{
-												"url":""+repl34+""
-											  }
-											}
-										  };
+						// var textArray3344 = ['Now for the leafs :-) ','Leafs analysis on the way:', 'We continue with leafs:','Next leafs analysis:','Leafs next:','Leafs analysis next'];
+						// var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);		
+						// setTimeout(function(){
+						// var wrwr3344=textArray3344[randomNumber3344];					
+						// sendFBMessage(sender, {text: wrwr3344});
+						// }, 3000);
+						
+						
+						// repl34='http://195.251.59.51/json/photorig/leafs.jpg';
+						// var messageData34 ={
+											// "attachment":{
+											  // "type":"image",
+											  // "payload":{
+												// "url":""+repl34+""
+											  // }
+											// }
+										  // };
 										  
-						
-						sendFBMessage(sender, messageData34);
-						//}, 2000);
-						sendFBMessage(sender, {text: "5"});
-						
+						// sendFBMessage(sender, messageData34);
 											
-						//--------------- old one
+					
 						  var ttt=anythingelse();
 
-						  //while (condition) {
-
+						 
 						  setTimeout(function(){						
 						  sendFBMessage(sender, {text: ttt});
 						  }, 4000);
-						  sendFBMessage(sender, {text: "6"});
+						  
 						//}
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
