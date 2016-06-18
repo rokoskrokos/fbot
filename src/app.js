@@ -295,7 +295,7 @@ function processEvent(event) {
 						 
 						  setTimeout(function(){						
 						  sendFBMessage(sender, {text: ttt});
-						  }, 4000);
+						  }, 2000);
 						  
 						//}
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
