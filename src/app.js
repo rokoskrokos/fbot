@@ -253,7 +253,7 @@ function processEvent(event) {
 							// }
 					  					  
 					  
-					 
+					 sendFBMessage(sender, {text: "1"});
 						var messageData34 ={
 											"attachment":{
 											  "type":"image",
@@ -265,7 +265,9 @@ function processEvent(event) {
 										  
 						
 						sendFBMessage(sender, messageData34);
-						var qp=1;
+						//var qp=1;
+						
+						sendFBMessage(sender, {text: "2"});
 						
 						var textArray3344 = ['Now for the leafs :-) ','Leafs analysis on the way:', 'We continue with leafs:','Next leafs analysis:','Leafs next:','Leafs analysis next'];
 						var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);		
@@ -274,11 +276,12 @@ function processEvent(event) {
 						sendFBMessage(sender, {text: wrwr3344});
 						}, 3000);
 						
+						sendFBMessage(sender, {text: "3"});
 						setTimeout(function(){						
 						}, 4000);
-						
+						sendFBMessage(sender, {text: "4"});
 						//setTimeout(function(){
-						qp=2;
+						//qp=2;
 						repl34='http://195.251.59.51/json/photorig/leafs.jpg';
 						var messageData34 ={
 											"attachment":{
@@ -292,18 +295,19 @@ function processEvent(event) {
 						
 						sendFBMessage(sender, messageData34);
 						//}, 2000);
-						
+						sendFBMessage(sender, {text: "5"});
 						
 											
 						//--------------- old one
 						  var ttt=anythingelse();
 
-						  while (condition) {
+						  //while (condition) {
 
 						  setTimeout(function(){						
 						  sendFBMessage(sender, {text: ttt});
 						  }, 4000);
-						}
+						  sendFBMessage(sender, {text: "6"});
+						//}
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
 						//setTimeout(function(){
