@@ -569,7 +569,7 @@ function processEvent(event) {
 						
 											
 						//--------------- old one
-						sendFBMessage(sender, {text: "rere111"});
+						//sendFBMessage(sender, {text: "rere111"});
 						  var ttt=anythingelse();
 						  setTimeout(function(){						
 						  sendFBMessage(sender, {text: ttt});
