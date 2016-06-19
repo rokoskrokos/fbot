@@ -609,7 +609,7 @@ function processEvent(event) {
 }
 
 function anythingelse() {
-	var textArray1 = ['Something else?', 'Anything else?', 'Anything else? :-) or else call me by name "Farmbot)','Do you want something else?', "That's it for now..call Farmbot for anything else.",'If you need anything else call Farmbot','This is it for now. Call Farmbot for anything else','Something else? (or just call Farmbot :) )'];
+	var textArray1 = ['Something else?', 'Anything else?', 'Anything else? :-)','Do you want something else?', "That's it for now..call Farmbot for anything else.",'If you need anything else call Farmbot','Next :-)','This is it or is there anything else?','What is next? :)'];
 						var randomNumber1 = Math.floor(Math.random()*textArray1.length);
 						var wrwr;
 						wrwr=textArray1[randomNumber1];							
