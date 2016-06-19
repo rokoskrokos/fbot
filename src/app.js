@@ -36,7 +36,7 @@ function processEvent(event) {
           },{
             "type": "postback",
             "title": "Sensor data",
-            "payload": "sensor data",
+            "payload": "sensorsfull",
           },{
             "type": "postback",
             "title": "Soil-Leafs analysis",
@@ -365,22 +365,23 @@ function processEvent(event) {
 					//sos in direct call: maybe both data and histogram from air in one graph or data and histogram from humidity in second
                         var repl123;
 					  //var farm=response.result.parameters.farm;
-					  switch(response.result.parameters.farm) {
-								case "first farm":
+					  repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
+					  // switch(response.result.parameters.farm) {
+								// case "first farm":
 									//console.log( 'case first farm ======');
-									repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
-									break;
-								case "second farm":
+									// repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
+									// break;
+								// case "second farm":
 									//console.log( 'case second farm ======');
-									repl123='http://195.251.59.51/json/photorig/hthermbig2.jpg';
-									break;
-								case "third farm":
+									// repl123='http://195.251.59.51/json/photorig/hthermbig2.jpg';
+									// break;
+								// case "third farm":
 									//console.log( 'case third farm ======');
-									repl123='http://195.251.59.51/json/photorig/hthermbig3.jpg';
-									break;
-								//default:
-								//	default code block
-							}
+									// repl123='http://195.251.59.51/json/photorig/hthermbig3.jpg';
+									// break;
+													//default:
+														//default code block
+							// }
 					  
 						var messageData123 ={
 											"attachment":{
