@@ -31,8 +31,8 @@ function processEvent(event) {
           "buttons": [{
             "type":"web_url",
 			"url":"https://www.google.com/maps/place/40%C2%B030'36.7%22N+23%C2%B008'34.8%22E/@40.5102367,23.1430865,291m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d40.510201!4d23.143003",
-			"title":"Google maps",
-			"payload": "map"
+			"title":"Google maps"
+			//,"payload": "map"
           },{
             "type": "postback",
             "title": "Sensor data",
