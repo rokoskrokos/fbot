@@ -30,13 +30,12 @@ function processEvent(event) {
           "image_url": "http://195.251.59.51/json/photorig/of2.jpg",
           "buttons": [{
             "type":"web_url",
-			"url":"https://www.google.com/maps/place/40%C2%B030'36.7%22N+23%C2%B008'34.8%22E/@40.5102367,23.1430865,291m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d40.510201!4d23.143003",
+			"url":"https://www.google.com/maps?q=loc:40.510201,23.143003&t=h",
 			"title":"Google maps"
-			//,"payload": "map"
           },{
             "type": "postback",
             "title": "Sensor data",
-            "payload": "sensorsfull",
+            "payload": "sensor data",
           },{
             "type": "postback",
             "title": "Soil-Leafs analysis",
@@ -243,7 +242,7 @@ function processEvent(event) {
 						 var repl34;
 					  //var farm=response.result.parameters.farm;
 					 // var analelse;
-					  repl34='http://195.251.59.51/json/photorig/Soilleafs.jpg';
+					  repl34='http://195.251.59.51/json/photorig/soils.jpg';
 					  
 					  // switch(response.result.contexts[0].parameters.typeofanalysis) {
 								// case "soil":
@@ -365,23 +364,22 @@ function processEvent(event) {
 					//sos in direct call: maybe both data and histogram from air in one graph or data and histogram from humidity in second
                         var repl123;
 					  //var farm=response.result.parameters.farm;
-					  repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
-					  // switch(response.result.parameters.farm) {
-								// case "first farm":
+					  switch(response.result.parameters.farm) {
+								case "first farm":
 									//console.log( 'case first farm ======');
-									// repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
-									// break;
-								// case "second farm":
+									repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
+									break;
+								case "second farm":
 									//console.log( 'case second farm ======');
-									// repl123='http://195.251.59.51/json/photorig/hthermbig2.jpg';
-									// break;
-								// case "third farm":
+									repl123='http://195.251.59.51/json/photorig/hthermbig2.jpg';
+									break;
+								case "third farm":
 									//console.log( 'case third farm ======');
-									// repl123='http://195.251.59.51/json/photorig/hthermbig3.jpg';
-									// break;
-													//default:
-														//default code block
-							// }
+									repl123='http://195.251.59.51/json/photorig/hthermbig3.jpg';
+									break;
+								//default:
+								//	default code block
+							}
 					  
 						var messageData123 ={
 											"attachment":{
@@ -609,7 +607,7 @@ function processEvent(event) {
 }
 
 function anythingelse() {
-	var textArray1 = ['Something else?', 'Anything else?', 'Anything else? :-)','Do you want something else?', "That's it for now..call Farmbot for anything else.",'If you need anything else call Farmbot','Next :-)','This is it or is there anything else?','What is next? :)'];
+	var textArray1 = ['Something else?', 'Anything else?', 'Anything else? :-) or else call me by name "Farmbot)','Do you want something else?', "That's it for now..call Farmbot for anything else.",'If you need anything else call Farmbot','This is it for now. Call Farmbot for anything else','Something else? (or just call Farmbot :) )'];
 						var randomNumber1 = Math.floor(Math.random()*textArray1.length);
 						var wrwr;
 						wrwr=textArray1[randomNumber1];							
