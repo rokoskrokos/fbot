@@ -520,7 +520,7 @@ function processEvent(event) {
 						 var repl3456;
 					  //var farm=response.result.parameters.farm;
 					 // var analelse;
-					  repl3456='http://195.251.59.51/json/photorig/soils.jpg';
+					  repl3456='http://195.251.59.51/json/photorig/Soilleafs.jpg';
 					  
 					  // switch(response.result.contexts[0].parameters.typeofanalysis) {
 								// case "soil":
