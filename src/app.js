@@ -243,7 +243,7 @@ function processEvent(event) {
 						 var repl34;
 					  //var farm=response.result.parameters.farm;
 					 // var analelse;
-					  repl34='http://195.251.59.51/json/photorig/Soilleafs2.jpg';
+					  repl34='http://195.251.59.51/json/photorig/Soilleafs.jpg';
 					  
 					  // switch(response.result.contexts[0].parameters.typeofanalysis) {
 								// case "soil":
