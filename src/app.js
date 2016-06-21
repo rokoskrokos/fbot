@@ -243,7 +243,7 @@ function processEvent(event) {
 						 var repl34;
 					  //var farm=response.result.parameters.farm;
 					 // var analelse;
-					  repl34='http://195.251.59.51/json/photorig/Soilleafs.jpg';
+					  repl34='http://195.251.59.51/json/photorig/Soilleafs2.jpg';
 					  
 					  // switch(response.result.contexts[0].parameters.typeofanalysis) {
 								// case "soil":
@@ -578,7 +578,7 @@ function processEvent(event) {
 						  var ttt=anythingelse();
 						  setTimeout(function(){						
 						  sendFBMessage(sender, {text: ttt});
-						  }, 2000);
+						  }, 3000);
 						
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
