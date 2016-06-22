@@ -221,7 +221,7 @@ function processEvent(event) {
 						// }, 3000);
 						
 						
-						 repl34='http://195.251.59.51/json/photorig/Monthhumall.jpg';
+						 repl34='http://195.251.59.51/json/photorig/Monthhumall1.jpg';
 						 var messageData34 ={
 											"attachment":{
 											  "type":"image",
@@ -530,7 +530,7 @@ function processEvent(event) {
 										  };
 										  
 						sendFBMessage(sender, messageData34);
-						 repl34='http://195.251.59.51/json/photorig/Monthhumall.jpg';
+						 repl34='http://195.251.59.51/json/photorig/Monthhumall1.jpg';
 						 var messageData34 ={
 											"attachment":{
 											  "type":"image",
