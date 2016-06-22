@@ -496,7 +496,7 @@ function processEvent(event) {
 				if (action=='chartyes'  )					
 						{		
 						 var repl123;
-						 repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
+						 //repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
 						 
 						 switch(response.result.parameters.typeofsensors) {
 								 case "air temp.":
