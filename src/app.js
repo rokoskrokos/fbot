@@ -498,10 +498,10 @@ function processEvent(event) {
 						 var repl123;
 						 //repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
 						 
-						 switch(response.result.parameters.typeofsensors) {
+						 switch(response.result.contexts[0].parameters.typeofsensors) {
 								 case "air temp.":
 									//console.log( 'case first farm ======');
-									 repl123='http://195.251.59.51/json/photorig/Month_temp_chart.jpg';
+									 repl123='http://195.251.59.51/json/photorig/month_temp_chart.jpg';
 									 break;
 								 case "humidity":
 									//console.log( 'case second farm ======');
