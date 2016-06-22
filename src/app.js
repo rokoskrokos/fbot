@@ -184,7 +184,7 @@ function processEvent(event) {
 						 var repl34;
 					  //var farm=response.result.parameters.farm;
 					 // var analelse;
-					  repl34='http://195.251.59.51/json/photorig/Monthtempall.jpg';
+					  repl34='http://195.251.59.51/json/photorig/Monthtempall1.jpg';
 					  
 					  // switch(response.result.contexts[0].parameters.typeofanalysis) {
 								// case "soil":
@@ -458,12 +458,6 @@ function processEvent(event) {
 									//console.log( 'case second farm ======');
 									 repl123='http://195.251.59.51/json/photorig/Month_hum.jpg';
 								 break;
-								// case "third farm":
-									//console.log( 'case third farm ======');
-									// repl123='http://195.251.59.51/json/photorig/hthermbig3.jpg';
-									// break;
-													//default:
-														//default code block
 							 }
 					  
 						var messageData123 ={
@@ -475,15 +469,6 @@ function processEvent(event) {
 											}
 										  };
 						sendFBMessage(sender, messageData123);
-						// var ttt=anythingelse();
-						
-						// setTimeout(function(){						
-						// sendFBMessage(sender, {text: ttt});
-						// }, 2000);
-						
-						
-						//console.log( 'ttt ======',ttt);
-						//sendFBMessage(sender, {text: ttt});
 						
 						var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
 						var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
@@ -515,8 +500,6 @@ function processEvent(event) {
 														//default code block
 							 }
 						 
-						 
-					 
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",
@@ -531,14 +514,40 @@ function processEvent(event) {
 						sendFBMessage(sender, {text: ttt});
 						}, 2000);
 						
-						// var textArray1 = ['Anything else? :-) or else call me by name "Farmbot)','Do you want something else?', "That 's it for now..call Farmbot for anything else.",'If you need anything else call Farmbot','This is it for now. Call Farmbot for anything else','Something else? (or just call Farmbot :) )'];
-						// var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
-						// setTimeout(function(){
-						// var wrwr=textArray1[randomNumber1];					
-						// sendFBMessage(sender, {text: wrwr});
-						// }, 2000);
-						
 				};	
+				
+					if (action=='sensorsfull' && response.result.actionIncomplete==false)					
+						{	
+						 var repl34;
+					  repl34='http://195.251.59.51/json/photorig/Monthtempall1.jpg';
+						var messageData34 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl34+""
+											  }
+											}
+										  };
+										  
+						sendFBMessage(sender, messageData34);
+						 repl34='http://195.251.59.51/json/photorig/Monthhumall.jpg';
+						 var messageData34 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl34+""
+											  }
+											}
+										  };
+										  
+						 sendFBMessage(sender, messageData34);
+						  var ttt=anythingelse();
+						  setTimeout(function(){						
+						  sendFBMessage(sender, {text: ttt});
+						  }, 3000);
+				};
+				
+
 				if (action=='analysis' && response.result.actionIncomplete==false )					
 						{		
 						 var repl123;
