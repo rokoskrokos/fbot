@@ -173,6 +173,89 @@ function processEvent(event) {
 						//}, 2000);
 						
 				};	
+				
+				if (action=='sensorsfull' && response.result.actionIncomplete==false)					
+						{	
+
+						//sos Maybe only one graph with both soil and leafs analysis here (both in postback and usual) and different in the simple call					
+						//var repl1='http://195.251.59.51/json/photorig/soil.jpg';
+										//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
+										//console.log( 'repl99 ======',repl99);
+						 var repl34;
+					  //var farm=response.result.parameters.farm;
+					 // var analelse;
+					  repl34='http://195.251.59.51/json/photorig/Monthtempall.jpg';
+					  
+					  // switch(response.result.contexts[0].parameters.typeofanalysis) {
+								// case "soil":
+									
+									// repl34='http://195.251.59.51/json/photorig/soils.jpg';
+									
+									// break;
+								// case "leafs":
+									
+									// repl34='http://195.251.59.51/json/photorig/leafs.jpg';
+									// break;								
+							// }
+					  					  
+					  					
+						var messageData34 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl34+""
+											  }
+											}
+										  };
+										  
+						
+						sendFBMessage(sender, messageData34);
+						
+						
+						
+						// var textArray3344 = ['Now for the leafs :-) ','Leafs analysis on the way:', 'We continue with leafs:','Next leafs analysis:','Leafs next:','Leafs analysis next'];
+						// var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);		
+						// setTimeout(function(){
+						// var wrwr3344=textArray3344[randomNumber3344];					
+						// sendFBMessage(sender, {text: wrwr3344});
+						// }, 3000);
+						
+						
+						 repl34='http://195.251.59.51/json/photorig/Monthhumall.jpg';
+						 var messageData34 ={
+											"attachment":{
+											  "type":"image",
+											  "payload":{
+												"url":""+repl34+""
+											  }
+											}
+										  };
+										  
+						 sendFBMessage(sender, messageData34);
+											
+					
+						  var ttt=anythingelse();
+
+						 
+						  setTimeout(function(){						
+						  sendFBMessage(sender, {text: ttt});
+						  }, 3000);
+						  
+						//}
+						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
+						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
+						//setTimeout(function(){
+						//var wrwr=textArray1[randomNumber1];						
+						//sendFBMessage(sender, messageData123);
+						//sendFBMessage(sender, {text: wrwr});
+						//}, 2000);
+						
+				};
+				
+				
+				
+				
+				
 				if (action=='analysis' && response.result.actionIncomplete==false)					
 						{		
 						//var repl1='http://195.251.59.51/json/photorig/soil.jpg';
@@ -365,23 +448,23 @@ function processEvent(event) {
 					//sos in direct call: maybe both data and histogram from air in one graph or data and histogram from humidity in second
                         var repl123;
 					  //var farm=response.result.parameters.farm;
-					  repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
-					  // switch(response.result.parameters.farm) {
-								// case "first farm":
+				// repl123='http://195.251.59.51/json/photorig/Month_temp.jpg';
+					   switch(response.result.parameters.typeofsensors) {
+								 case "air temp.":
 									//console.log( 'case first farm ======');
-									// repl123='http://195.251.59.51/json/photorig/hthermbig1.jpg';
-									// break;
-								// case "second farm":
+									 repl123='http://195.251.59.51/json/photorig/Month_temp.jpg';
+									 break;
+								 case "humidity":
 									//console.log( 'case second farm ======');
-									// repl123='http://195.251.59.51/json/photorig/hthermbig2.jpg';
-									// break;
+									 repl123='http://195.251.59.51/json/photorig/Month_hum.jpg';
+								 break;
 								// case "third farm":
 									//console.log( 'case third farm ======');
 									// repl123='http://195.251.59.51/json/photorig/hthermbig3.jpg';
 									// break;
 													//default:
 														//default code block
-							// }
+							 }
 					  
 						var messageData123 ={
 											"attachment":{
@@ -414,22 +497,26 @@ function processEvent(event) {
 						{		
 						 var repl123;
 						 repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
-					  //var farm=response.result.parameters.farm;
-					  // switch(response.result.contexts[0].parameters.farm) {
-								// case "first farm":
-									// console.log( 'case first farm ======');
-									// repl123='http://195.251.59.51/json/photorig/therm_chart1.jpg';
-									// break;
-								// case "second farm":
-									// console.log( 'case second farm ======');
-									// repl123='http://195.251.59.51/json/photorig/therm_chart2.jpg';
-									// break;
+						 
+						 switch(response.result.parameters.typeofsensors) {
+								 case "air temp.":
+									//console.log( 'case first farm ======');
+									 repl123='http://195.251.59.51/json/photorig/Month_temp_chart.jpg';
+									 break;
+								 case "humidity":
+									//console.log( 'case second farm ======');
+									 repl123='http://195.251.59.51/json/photorig/Month_hum_chart.jpg';
+								 break;
 								// case "third farm":
-									// console.log( 'case third farm ======');
-									// repl123='http://195.251.59.51/json/photorig/therm_chart3.jpg';
+									//console.log( 'case third farm ======');
+									// repl123='http://195.251.59.51/json/photorig/hthermbig3.jpg';
 									// break;
-								
-							// }
+													//default:
+														//default code block
+							 }
+						 
+						 
+					 
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",
