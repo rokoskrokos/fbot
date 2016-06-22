@@ -184,7 +184,7 @@ function processEvent(event) {
 						 var repl34;
 					  //var farm=response.result.parameters.farm;
 					 // var analelse;
-					  repl34='http://195.251.59.51/json/photorig/Monthtempall1.jpg';
+					  repl34='http://195.251.59.51/json/photorig/Monthtempall2.jpg';
 					  
 					  // switch(response.result.contexts[0].parameters.typeofanalysis) {
 								// case "soil":
@@ -519,7 +519,7 @@ function processEvent(event) {
 					if (action=='sensorsfull' && response.result.actionIncomplete==false)					
 						{	
 						 var repl34;
-					  repl34='http://195.251.59.51/json/photorig/Monthtempall1.jpg';
+					  repl34='http://195.251.59.51/json/photorig/Monthtempall2.jpg';
 						var messageData34 ={
 											"attachment":{
 											  "type":"image",
