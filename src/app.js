@@ -85,7 +85,7 @@ function processEvent(event) {
 						{
 						//sos in postback..here: maybe both data and histogram from air in one graph and then data and histogram from humidity in second							
                       var repl123456;
-					  repl123456='http://195.251.59.51/json/fbotphoto/tempall1.jpg';
+					  repl123456='http://195.251.59.51/json/photorig/hthermbig1.jpg';
 					  //var farm=response.result.parameters.farm;
 					  //console.log( 'response.result.parameters.farm ======',response.result.parameters.farm);
 									  // switch(response.result.parameters.farm) {
