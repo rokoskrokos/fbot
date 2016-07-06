@@ -471,7 +471,7 @@ function processEvent(event) {
 						sendFBMessage(sender, messageData123);
 						
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
-						/var textArray1 = ['How about more data? :-) ','More graphs?', 'Do you also want another chart?','Care fore more data?','I can provide more data. Do you need more?','Need more data?'];
+						var textArray1 = ['How about more data? :-) ','More graphs?', 'Do you also want another chart?','Care fore more data?','I can provide more data. Do you need more?','Need more data?'];
 						var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
 						setTimeout(function(){
 						var wrwr=textArray1[randomNumber1];					
