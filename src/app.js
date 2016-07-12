@@ -26,7 +26,7 @@ function processEvent(event) {
         "template_type": "generic",
         "elements": [{
           "title": "1. Oregano farm",
-          "subtitle": "Farm in Thessaloniki area",
+          "subtitle": "Farm in Thessaloniki area (alt. 140m",
           "image_url": "http://195.251.59.51/json/photorig/of2.jpg",
           "buttons": [{
             "type":"web_url",
