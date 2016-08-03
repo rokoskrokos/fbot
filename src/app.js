@@ -80,99 +80,7 @@ function processEvent(event) {
 					{						
 						sendFBMessage(sender, messageData1);
 					};	
-					
-					if (action=='sensor' && response.result.actionIncomplete==false )					
-						{
-						//sos in postback..here: maybe both data and histogram from air in one graph and then data and histogram from humidity in second							
-                      var repl123456;
-					  repl123456='http://195.251.59.51/json/photorig/hthermbig1.jpg';
-					  //var farm=response.result.parameters.farm;
-					  //console.log( 'response.result.parameters.farm ======',response.result.parameters.farm);
-									  // switch(response.result.parameters.farm) {
-												// case "first farm":
-																	
-													// repl123456='http://195.251.59.51/json/photorig/hthermbig1.jpg';
-													// break;
-												// case "second farm":
-																	
-													// repl123456='http://195.251.59.51/json/photorig/hthermbig2.jpg';
-													// break;
-												// case "third farm":
-																		
-													// repl123456='http://195.251.59.51/json/photorig/hthermbig3.jpg';
-													// break;
-																		
-											// }
-					  
-						//var repl123='http://195.251.59.51/json/photorig/hthermbig.jpg';
-						//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
-						//console.log( 'repl99 ======',repl99);
-						var messageData123456 ={
-											"attachment":{
-											  "type":"image",
-											  "payload":{
-												"url":""+repl123456+""
-											  }
-											}
-										  };
-										  
-										  										  
-					sendFBMessage(sender, messageData123456);
-						var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
-						var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
-						setTimeout(function(){
-						var wrwr=textArray1[randomNumber1];					
-						sendFBMessage(sender, {text: wrwr});
-						}, 2000);
-						
-						
-				};	
-				if (action=='chartyes'  )					
-						{		
-					
-						 var repl123321;
-						 repl123321='http://195.251.59.51/json/photorig/therm_chart1.jpg';
-					  //var farm=response.result.parameters.farm;
-					  // switch(response.result.contexts[0].parameters.farm) {
-								// case "first farm":
-									// console.log( 'case first farm ======');
-									// repl123321='http://195.251.59.51/json/photorig/therm_chart1.jpg';
-									// break;
-								// case "second farm":
-									// console.log( 'case second farm ======');
-									// repl123321='http://195.251.59.51/json/photorig/therm_chart2.jpg';
-									// break;
-								// case "third farm":
-									// console.log( 'case third farm ======');
-									// repl123321='http://195.251.59.51/json/photorig/therm_chart3.jpg';
-									// break;
-								
-							// }
-						var messageData123321 ={
-											"attachment":{
-											  "type":"image",
-											  "payload":{
-												"url":""+repl123321+""
-											  }
-											}
-										  };
-										  
-										  
-						sendFBMessage(sender, messageData123321);
-						var ttt=anythingelse();
-						setTimeout(function(){						
-						sendFBMessage(sender, {text: ttt});
-						}, 2000);
-						
-						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
-						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
-						//setTimeout(function(){
-						//var wrwr=textArray1[randomNumber1];						
-						//sendFBMessage(sender, messageData123);
-						//sendFBMessage(sender, {text: wrwr});
-						//}, 2000);
-						
-				};	
+										
 				
 				if (action=='sensorsfull' && response.result.actionIncomplete==false)					
 						{	
@@ -211,16 +119,13 @@ function processEvent(event) {
 						
 						sendFBMessage(sender, messageData34);
 						
-						
-						
 						// var textArray3344 = ['Now for the leafs :-) ','Leafs analysis on the way:', 'We continue with leafs:','Next leafs analysis:','Leafs next:','Leafs analysis next'];
 						// var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);		
 						// setTimeout(function(){
 						// var wrwr3344=textArray3344[randomNumber3344];					
 						// sendFBMessage(sender, {text: wrwr3344});
 						// }, 3000);
-						
-						
+											
 						 repl34='http://195.251.59.51/json/photorig/Monthhumall1.jpg';
 						 var messageData34 ={
 											"attachment":{
@@ -232,11 +137,9 @@ function processEvent(event) {
 										  };
 										  
 						 sendFBMessage(sender, messageData34);
-											
-					
+							
 						  var ttt=anythingelse();
 
-						 
 						  setTimeout(function(){						
 						  sendFBMessage(sender, {text: ttt});
 						  }, 3000);
@@ -248,73 +151,10 @@ function processEvent(event) {
 						//var wrwr=textArray1[randomNumber1];						
 						//sendFBMessage(sender, messageData123);
 						//sendFBMessage(sender, {text: wrwr});
-						//}, 2000);
-						
+						//}, 2000);						
 				};
 				
 				
-				
-				
-				
-				if (action=='analysis' && response.result.actionIncomplete==false)					
-						{		
-						//var repl1='http://195.251.59.51/json/photorig/soil.jpg';
-										//var repl456='http://195.251.59.51/json/photorig/therm_chart.jpg';
-										//console.log( 'repl99 ======',repl99);
-						 var repl666;
-					  //var farm=response.result.parameters.farm;
-					 // var analelse;
-					  console.log( 'response.result.contexts[0].parameters.typeofanalysis ======',response.result.contexts[0].parameters.typeofanalysis)
-					  
-					  switch(response.result.contexts[0].parameters.typeofanalysis) {
-								case "soil":
-									//console.log( 'case first farm ======');
-									repl666='http://195.251.59.51/json/photorig/soils.jpg';
-									//analelse
-									break;
-								case "leafs":
-									//console.log( 'case second farm ======');
-									repl666='http://195.251.59.51/json/photorig/leafs.jpg';
-									break;								
-							}
-					  					  
-					  
-					 
-						var messageData666 ={
-											"attachment":{
-											  "type":"image",
-											  "payload":{
-												"url":""+repl666+""
-											  }
-											}
-										  };
-										  
-						
-						sendFBMessage(sender, messageData666);
-						
-						var textArray3344 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
-						var randomNumber3344 = Math.floor(Math.random()*textArray3344.length);			
-						setTimeout(function(){
-						var wrwr3344=textArray1[randomNumber3344];					
-						sendFBMessage(sender, {text: wrwr3344});
-						}, 2000);
-						
-											
-						//--------------- old one
-						// var ttt=anythingelse();
-						// setTimeout(function(){						
-						// sendFBMessage(sender, {text: ttt});
-						// }, 2000);
-						
-						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
-						//var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
-						//setTimeout(function(){
-						//var wrwr=textArray1[randomNumber1];						
-						//sendFBMessage(sender, messageData123);
-						//sendFBMessage(sender, {text: wrwr});
-						//}, 2000);
-						
-				};
 				
 				if (action=='analysisfull' && response.result.actionIncomplete==false)					
 						{	
@@ -438,11 +278,58 @@ function processEvent(event) {
                     }
                 } else if (isDefined(responseText)) {
 					
+					
+					
 					if (action=='help' )					
 					{						
 						sendFBMessage(sender, messageData1);
 					};	
+														
 					
+					if (action=='photos'  )					
+						{		
+							var r1;
+							r1='http://195.251.59.51/json/photorig/photo1_1.jpg';							
+								var messageDataq ={
+														"attachment":{
+														  "type":"image",
+														  "payload":{
+															"url":""+r1+""
+														  }
+														}
+													  };
+									
+									sendFBMessage(sender, messageDataq);
+							r1='http://195.251.59.51/json/photorig/photo2_2.jpg';
+									var messageDataq ={
+														"attachment":{
+														  "type":"image",
+														  "payload":{
+															"url":""+r1+""
+														  }
+														}
+													  };
+									
+									sendFBMessage(sender, messageDataq);
+							r1='http://195.251.59.51/json/photorig/photo3_3.jpg';
+							var messageDataq ={
+														"attachment":{
+														  "type":"image",
+														  "payload":{
+															"url":""+r1+""
+														  }
+														}
+													  };
+									
+									sendFBMessage(sender, messageDataq);
+									
+									var ttt=anythingelse();
+									setTimeout(function(){						
+									sendFBMessage(sender, {text: ttt});
+									}, 2000);			
+						};
+					
+										
 					if (action=='sensor' && response.result.actionIncomplete==false )					
 						{	
 					//sos in direct call: maybe both data and histogram from air in one graph or data and histogram from humidity in second
@@ -458,8 +345,7 @@ function processEvent(event) {
 									//console.log( 'case second farm ======');
 									 repl123='http://195.251.59.51/json/photorig/Month_hum.jpg';
 								 break;
-							 }
-					  
+							 }			  
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",
@@ -471,14 +357,16 @@ function processEvent(event) {
 						sendFBMessage(sender, messageData123);
 						
 						//var textArray1 = ['How about a graph? :-) ','Do you also want a graph?', 'Do you also want a chart?','How about a chart?','Need a graph?','Need chart?'];
-						var textArray1 = ['How about more data? :-) ','More graphs?', 'Do you also want another chart?','Care fore more data?','I can provide more data. Do you need more?','Need more data?'];
+						var textArray1 = ['I can provide more data. Do you need more?','How about more data? :-) ','Need more graphs?', 'Do you also want another chart?','Care fore more data?','I can give you more data. Do you need more?','Need more data?'];
 						var randomNumber1 = Math.floor(Math.random()*textArray1.length);			
 						setTimeout(function(){
 						var wrwr=textArray1[randomNumber1];					
 						sendFBMessage(sender, {text: wrwr});
-						}, 2000);
-						
+						}, 2000);			
 				};	
+				
+	
+				
 				if (action=='chartyes'  )					
 						{		
 						 var repl123;
@@ -515,7 +403,7 @@ function processEvent(event) {
 						sendFBMessage(sender, {text: ttt});
 						}, 2000);
 						
-				};	
+					};	
 				
 					if (action=='sensorsfull' && response.result.actionIncomplete==false)					
 						{	
