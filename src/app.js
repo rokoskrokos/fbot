@@ -311,6 +311,19 @@ function processEvent(event) {
 													  };
 									
 									sendFBMessage(sender, messageDataq);
+									
+									r1='http://195.251.59.51/json/photorig/leafsmonth3full.jpg';
+									var messageDataq ={
+														"attachment":{
+														  "type":"image",
+														  "payload":{
+															"url":""+r1+""
+														  }
+														}
+													  };
+									
+									sendFBMessage(sender, messageDataq);
+									
 									var ttt=anythingelse();
 									setTimeout(function(){						
 									sendFBMessage(sender, {text: ttt});
@@ -486,22 +499,22 @@ function processEvent(event) {
 					  			
 						 
 						 
-					  var farm=response.result.parameters.farm;
-					  switch(response.result.contexts[0].parameters.farm) {
-								case "first farm":
-									console.log( 'case first farm ======');
-									repl123='http://195.251.59.51/json/photorig/soil1.jpg';
-									break;
-								case "second farm":
-									console.log( 'case second farm ======');
-									repl123='http://195.251.59.51/json/photorig/soil2.jpg';
-									break;
-								case "third farm":
-									console.log( 'case third farm ======');
-									repl123='http://195.251.59.51/json/photorig/soil3.jpg';
-									break;
+					  // var farm=response.result.parameters.farm;
+					  // switch(response.result.contexts[0].parameters.farm) {
+								// case "first farm":
+									// console.log( 'case first farm ======');
+									// repl123='http://195.251.59.51/json/photorig/soil1.jpg';
+									// break;
+								// case "second farm":
+									// console.log( 'case second farm ======');
+									// repl123='http://195.251.59.51/json/photorig/soil2.jpg';
+									// break;
+								// case "third farm":
+									// console.log( 'case third farm ======');
+									// repl123='http://195.251.59.51/json/photorig/soil3.jpg';
+									// break;
 								
-							}
+							// }
 						var messageData123 ={
 											"attachment":{
 											  "type":"image",
