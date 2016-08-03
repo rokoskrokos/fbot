@@ -335,7 +335,7 @@ function processEvent(event) {
 									var ttt=anythingelse();
 									setTimeout(function(){						
 									sendFBMessage(sender, {text: ttt});
-									}, 3000);	
+									}, 4000);	
 					};
 					
 					
