@@ -329,12 +329,12 @@ function processEvent(event) {
 									
 									setTimeout(function(){						
 									sendFBMessage(sender, messageDataq);
-									}, 1500);	
+									}, 2000);	
 									
 									var ttt=anythingelse();
 									setTimeout(function(){						
 									sendFBMessage(sender, {text: ttt});
-									}, 2500);	
+									}, 3000);	
 					};
 					
 					
