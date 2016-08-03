@@ -301,6 +301,7 @@ function processEvent(event) {
 									
 									sendFBMessage(sender, messageDataq);
 									
+							setTimeout(function(){	
 							r1='http://195.251.59.51/json/photorig/leafsmonth2full.jpg';
 									var messageDataq ={
 														"attachment":{
@@ -312,11 +313,11 @@ function processEvent(event) {
 													  };
 									
 									
-									setTimeout(function(){						
+														
 									sendFBMessage(sender, messageDataq);
-									}, 1000);	
+									}, 2000);	
 									
-									
+									setTimeout(function(){	
 									r1='http://195.251.59.51/json/photorig/leafsmonth3full.jpg';
 									var messageDataq ={
 														"attachment":{
@@ -327,14 +328,14 @@ function processEvent(event) {
 														}
 													  };
 									
-									setTimeout(function(){						
+									//setTimeout(function(){						
 									sendFBMessage(sender, messageDataq);
-									}, 2000);	
+									}, 3000);	
 									
 									var ttt=anythingelse();
 									setTimeout(function(){						
 									sendFBMessage(sender, {text: ttt});
-									}, 3000);	
+									}, 5000);	
 					};
 					
 					
