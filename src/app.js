@@ -314,7 +314,7 @@ function processEvent(event) {
 									
 									setTimeout(function(){						
 									sendFBMessage(sender, messageDataq);
-									}, 2000);	
+									}, 1000);	
 									
 									
 									r1='http://195.251.59.51/json/photorig/leafsmonth3full.jpg';
@@ -329,12 +329,12 @@ function processEvent(event) {
 									
 									setTimeout(function(){						
 									sendFBMessage(sender, messageDataq);
-									}, 4000);	
+									}, 1500);	
 									
 									var ttt=anythingelse();
 									setTimeout(function(){						
 									sendFBMessage(sender, {text: ttt});
-									}, 2000);	
+									}, 2500);	
 					};
 					
 					
