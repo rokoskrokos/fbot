@@ -286,6 +286,38 @@ function processEvent(event) {
 					};	
 														
 					
+					if (action=='leafsmonth' )					
+					{						
+						var r1;
+							r1='http://195.251.59.51/json/photorig/leafsmonth1full.jpg';							
+								var messageDataq ={
+														"attachment":{
+														  "type":"image",
+														  "payload":{
+															"url":""+r1+""
+														  }
+														}
+													  };
+									
+									sendFBMessage(sender, messageDataq);
+							r1='http://195.251.59.51/json/photorig/leafsmonth2full.jpg';
+									var messageDataq ={
+														"attachment":{
+														  "type":"image",
+														  "payload":{
+															"url":""+r1+""
+														  }
+														}
+													  };
+									
+									sendFBMessage(sender, messageDataq);
+									var ttt=anythingelse();
+									setTimeout(function(){						
+									sendFBMessage(sender, {text: ttt});
+									}, 2000);	
+					};
+					
+					
 					if (action=='photos'  )					
 						{		
 							var r1;
