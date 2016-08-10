@@ -502,7 +502,11 @@ function processEvent(event) {
 								case "leafs":
 									//console.log( 'case second farm ======');
 									repl123='http://195.251.59.51/json/photorig/leafs.jpg';
-									break;								
+									break;
+								case "oil":
+									//console.log( 'case second farm ======');
+									repl123='http://195.251.59.51/json/photorig/oil.jpg';
+									break;									
 							}
 					  			
 						 
