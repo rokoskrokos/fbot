@@ -39,7 +39,7 @@ function processEvent(event) {
             "payload": "sensorsfull",
           },{
             "type": "postback",
-            "title": "Soil-Leafs analysis",
+            "title": "Soil-Leafs-Oil analysis",
             "payload": "analysisfull",
           }],
         }
@@ -166,7 +166,7 @@ function processEvent(event) {
 						 var repl34;
 					  //var farm=response.result.parameters.farm;
 					 // var analelse;
-					  repl34='http://195.251.59.51/json/photorig/Soilleafs.jpg';
+					  repl34='http://195.251.59.51/json/photorig/Soilleafsoil.jpg';
 					  
 					  // switch(response.result.contexts[0].parameters.typeofanalysis) {
 								// case "soil":
