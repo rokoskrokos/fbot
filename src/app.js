@@ -39,7 +39,7 @@ function processEvent(event) {
             "payload": "sensorsfull",
           },{
             "type": "postback",
-            "title": "Soil-Leafs-Oil analysis",
+            "title": "Soil,Leafs,Oil analysis",
             "payload": "analysisfull",
           }],
         }
